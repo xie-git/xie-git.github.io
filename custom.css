@@ -1,0 +1,113 @@
+/* Page Style */
+body {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+  height: 100%;
+  color: #444;
+  line-height: 1.6em;
+}
+a:active, a:focus {
+  outline: none;
+}
+h1, h2, h3, h4, h5 {
+  line-height: 1.2em;
+}
+
+/* Top Banner */
+.banner {
+  background-image: url(https://s3-us-west-2.amazonaws.com/keenant/nebula.jpg);
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+.banner .lead {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  min-width: 200px;
+}
+.banner .lead h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+.banner .lead h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+.banner .lead .lead-social {
+  font-size: 1.7em;
+}
+.banner .lead .lead-social a {
+  text-decoration: none !important;
+  color: #fff;
+  margin-right: 15px;
+  opacity: 0.7;
+}
+.banner .lead .lead-social a:hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 15px 50px;
+}
+.container h1:before {
+  content: "# ";
+}
+.container h1,
+.container h2,
+.container h3 {
+  color: #555;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+/* Social Media Icons */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nvfvnm');
+  src:  url('fonts/icomoon.eot?nvfvnm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nvfvnm') format('truetype'),
+    url('fonts/icomoon.woff?nvfvnm') format('woff'),
+    url('fonts/icomoon.svg?nvfvnm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*noinspection CssNoGenericFontName*/
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
