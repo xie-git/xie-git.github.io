@@ -62,8 +62,7 @@
     <!-- Initialize theme immediately to prevent flash -->
     <script>
         (function() {
-            var saved = localStorage.getItem('theme') ||
-                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            var saved = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', saved);
         })();
     </script>
