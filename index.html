@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Xie - Software Engineer | Python & AWS Specialist | Chicago</title>
+    <meta name="description" content="Michael Xie is a software engineer specializing in big data ETL pipelines, cloud infrastructure, and scalable systems. 5+ years experience in fintech and enterprise software. Based in Chicago, IL.">
+    <meta name="keywords" content="Michael Xie, Software Engineer, Python, AWS, Data Engineering, ETL, Cloud Infrastructure, DevOps, Machine Learning, Chicago, Portfolio">
+    <meta name="author" content="Michael Xie">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://xie-git.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Michael Xie - Software Engineer | Python & AWS Specialist">
+    <meta property="og:description" content="Software engineer specializing in big data ETL pipelines, cloud infrastructure, and scalable systems. 5+ years experience in fintech and enterprise software.">
+    <meta property="og:url" content="https://xie-git.github.io/">
+    <meta property="og:site_name" content="Michael Xie Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Michael Xie - Software Engineer | Python & AWS Specialist">
+    <meta name="twitter:description" content="Software engineer specializing in big data ETL pipelines, cloud infrastructure, and scalable systems.">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Xie",
+      "url": "https://xie-git.github.io",
+      "jobTitle": "Software Engineer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chicago",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/xie-michael",
+        "https://github.com/xie-git"
+      ],
+      "knowsAbout": [
+        "Python Programming", "AWS Cloud Services", "Data Engineering",
+        "ETL Pipelines", "DevOps", "Machine Learning", "Docker"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Preload fonts -->
+    <link rel="preload" href="fonts/PPNeueMontreal-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/PPNeueMontreal-Italic.woff" as="font" type="font/woff" crossorigin>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Initialize theme immediately to prevent flash -->
+    <script>
+        (function() {
+            var saved = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', saved);
+        })();
+    </script>
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon sun">☀️</span>
+        <span class="theme-toggle-icon moon">🌙</span>
+    </button>
+
+    <div id="top" class="container margin vertical flex flex-columns flex-nowrap">
+
+        <!-- Header -->
+        <header>
+            <div class="container padding horizontal">
+                <div class="block">
+                    <nav>
+                        <div class="container-actions">
+                            <h2><a href="#top">Michael Xie</a></h2>
+                            <div class="links-container">
+                                <ul class="links-list">
+                                    <li><a href="#top">Bio</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#story">Story</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="container margin horizontal flex flex-columns flex-grow">
+            <main class="flex-grow">
+                <div class="block">
+
+                    <!-- Intro Section -->
+                    <div class="block">
+                        <div class="intro-container">
+                            <div class="intro-left">
+                                <p>Senior Software Engineer based in Chicago, IL with extensive experience delivering scalable, enterprise-grade systems for leading financial institutions.</p>
+                            </div>
+                            <div class="intro-right">
+                                <div class="intro-buttons">
+                                    <a href="Xie_Data_Resume.pdf" target="_blank" class="intro-button-left">Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Selected Works Section -->
+                    <section id="projects" class="block works-section">
+                        <div class="wrapper">
+                            <h2>Selected <br> Works ↘</h2>
+                            <div class="works-grid">
+
+                                <div class="project-card" onclick="openModal('homelab')">
+                                    <h3>HomeLab &amp; Smart-Condo <br><span class="fade">Infrastructure &amp; DevOps</span></h3>
+                                    <img src="images/projects/homelab_image.png" alt="HomeLab & Smart-Condo Automation Platform" class="project-image">
+                                    <p>Containerized environment powering home automation, analytics, and AI.</p>
+                                </div>
+
+                                <div class="project-card" onclick="openModal('real-estate')">
+                                    <h3>Chicago Rental Analytics <br><span class="fade">Data Engineering &amp; Visualization</span></h3>
+                                    <img src="images/projects/chicago_analytics_map.png" alt="Chicago Rental Analytics" class="project-image">
+                                    <p>Automated platform processing 75k+ records with ML insights.</p>
+                                </div>
+
+                                <div class="project-card" onclick="openModal('ai-ml')">
+                                    <h3>AI/ML Playground <br><span class="fade">Artificial Intelligence</span></h3>
+                                    <img src="images/projects/aigeneratedai.png" alt="AI/ML Playground" class="project-image">
+                                    <p>Self-hosted infrastructure with Stable Diffusion and LLM models.</p>
+                                </div>
+
+                                <div class="project-card" onclick="openModal('smart-home')">
+                                    <h3>Smart-Home &amp; IoT <br><span class="fade">IoT &amp; Home Automation</span></h3>
+                                    <img src="images/projects/homeassistant.png" alt="Smart-Home & IoT Ecosystem" class="project-image">
+                                    <p>Comprehensive sensor network with BME688, LD2450, and Home Assistant automation.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Developer Story Section -->
+                    <section id="story" class="block developer-story-section">
+                        <div class="wrapper">
+                            <h2>Developer <br> Story ↘</h2>
+                            <div class="timeline-wrapper">
+
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <img src="images/companies/uw_small.png" alt="University of Wisconsin-Madison" class="company-logo-large">
+                                        <div class="timeline-text-content">
+                                            <div class="timeline-type education">education</div>
+                                            <div class="timeline-date">Aug 2014 - <strong>May 2018</strong></div>
+                                            <h3 class="education">Bachelor's Degree</h3>
+                                            <div class="timeline-company">University of Wisconsin-Madison • Madison, WI</div>
+                                            <p>Bachelor's degree focused on financial statistics, econometrics, and computational methods for large-scale data analysis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <img src="images/companies/northwestern_mutual_small.png" alt="Northwestern Mutual" class="company-logo-large">
+                                        <div class="timeline-text-content">
+                                            <div class="timeline-type work">work</div>
+                                            <div class="timeline-date">Jun 2018 - <strong>Aug 2019</strong></div>
+                                            <h3 class="northwestern-mutual">Operations Lead</h3>
+                                            <div class="timeline-company">Northwestern Mutual • Milwaukee, WI</div>
+                                            <p>Managed enterprise iOS/Android app deployment using Microsoft Intune and Azure AD.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <img src="images/companies/capital_one_small.png" alt="Capital One" class="company-logo-large">
+                                        <div class="timeline-text-content">
+                                            <div class="timeline-type work">work</div>
+                                            <div class="timeline-date">Aug 2019 - <strong>Nov 2023</strong></div>
+                                            <h3 class="capital-one">Software Engineer</h3>
+                                            <div class="timeline-company">Capital One • Chicago, IL</div>
+                                            <p>Built scalable AWS ETL pipelines with Python/PySpark and fraud analytics systems using Java Spring Boot.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <img src="images/companies/northern_trust_small.png" alt="Northern Trust" class="company-logo-large">
+                                        <div class="timeline-text-content">
+                                            <div class="timeline-type work">work</div>
+                                            <div class="timeline-date">Mar 2025 - <strong>Present</strong></div>
+                                            <h3 class="northern-trust">Software Engineer (IAM)</h3>
+                                            <div class="timeline-company">Northern Trust • Chicago, IL</div>
+                                            <p>Developing Python ETL pipelines for enterprise identity systems and automating legacy IAM data migration.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Statement Section -->
+                    <section class="block statement-section">
+                        <div class="statement-container">
+                            <p class="statement-highlight text-lg">
+                                Software Engineering. Data Engineering. API Development. Embedded Systems. Cloud &amp; Infrastructure. Security &amp; DevOps.
+                            </p>
+                            <div class="statement-sub">
+                                <p>
+                                    6+ years specializing in Python, Java, ETL pipelines, AWS cloud infrastructure, on-premises systems, and enterprise-scale data platforms at Fortune 500 companies.
+                                </p>
+                                <div>
+                                    <a href="#story">My Journey ↘</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="block">
+                <div class="container">
+                    <section class="footer-links">
+                        <div>
+                            <h2>Links ↘</h2>
+                            <ul>
+                                <li><a href="#top">Bio</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="Xie_Data_Resume.pdf" target="_blank">Resume</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Connect ↘</h2>
+                            <ul>
+                                <li><a href="mailto:xie.michael@icloud.com">Email</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Socials ↘</h2>
+                            <ul>
+                                <li><a href="https://github.com/xie-git">Github</a></li>
+                                <li><a href="https://linkedin.com/in/xie-michael">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <small>© 2025 Michael Xie. All rights reserved.</small>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <div class="modal-left">
+                <div class="modal-header">
+                    <h2 id="modalTitle" class="modal-title"></h2>
+                    <div id="modalType" class="modal-type"></div>
+                </div>
+                <div id="modalImage" class="modal-image"></div>
+                <p id="modalOverview" class="modal-overview"></p>
+            </div>
+
+            <div class="modal-right">
+                <div class="modal-section">
+                    <h3>Tech Stack</h3>
+                    <div id="modalTechStack" class="tech-list"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Features</h3>
+                    <ul id="modalFeatures" class="feature-list"></ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Challenge</h3>
+                    <p id="modalChallenges"></p>
+                </div>
+                <div class="modal-section">
+                    <h3>Impact</h3>
+                    <p id="modalImpact"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
