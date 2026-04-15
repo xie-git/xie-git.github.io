@@ -22,7 +22,7 @@ const projects = {
             'Automated resilience with health-checks and failover'
         ],
         challenges: 'Unified heterogeneous hardware under single monitoring plane, tuned InfluxDB retention for 500ms refresh without data loss, hardened remote access eliminating exposed public ports.',
-        impact: '99.9% service uptime over 12 months, reduced cloud-storage spend by $240/yr, improved HVAC efficiency by 8%, delivered reusable DevOps sandbox cutting work project iteration time by 40%.'
+        impact: 'Sustained service uptime over 12 months, reduced cloud-storage spend by $240/yr, improved HVAC efficiency, delivered reusable DevOps sandbox cutting work project iteration time significantly.'
     },
     'real-estate': {
         title: 'Chicago Rental Analytics & Visualization Pipeline',
